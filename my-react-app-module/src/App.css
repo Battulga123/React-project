@@ -1,0 +1,53 @@
+.upper-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.upper-location {
+    display: flex;
+   
+}
+.upper-car {
+    display: flex;
+}
+
+.upper-right {
+    display: flex;
+}
+
+.upper-right p {
+    margin: 0;
+}
+
+.navbar {
+    background-color: #F4F4F4;
+}
+
+
+
+.searchbar-container {
+    background-color: #003F62;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-container {
+    width: 140px;
+    padding-left: 120px;
+  }
+  
+  .signin-container {
+    color: white;
+    display: flex;
+    justify-content: right;
+  }
+
+  .signin,
+.favorite,
+.basket {
+  padding: 0 10px;
+  font-size: 20px;
+}
