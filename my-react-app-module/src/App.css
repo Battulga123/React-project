@@ -1,31 +1,39 @@
+html {
+    font-family: 'Poppins';
+
+}
+
+.content-container {
+    width: 85vw;
+    margin: 0 auto;
+}
+
 .upper-container {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
-}
-
-.upper-location {
-    display: flex;
-   
-}
-.upper-car {
-    display: flex;
+    margin: 10px;
 }
 
 .upper-right {
     display: flex;
+    gap: 20px;
 }
 
-.upper-right p {
-    margin: 0;
+.upper-right img {
+    width: 25px;
+    height: 25px;
 }
 
+
+
+
+\\
 .navbar {
     background-color: #F4F4F4;
 }
 
 
-
+/* Search */
 .searchbar-container {
     background-color: #003F62;
     height: 100px;
@@ -51,3 +59,123 @@
   padding: 0 10px;
   font-size: 20px;
 }
+
+
+/* Product slider*/
+
+.banner-container {
+    font-weight: 700;
+    font-size: 43px;
+    color: #1B5A7D;
+  }
+  
+  
+  .banner-container .text-short {
+  
+    font-size: 25px;
+    font-weight: 400;
+  }
+  
+
+  .promotion-price {
+    position: absolute;
+    background-color: #EDA415;
+    font-size: 21px;
+    color: white;
+    right: 30px;
+    bottom: 0px;
+    padding: 20px 30px;
+    border-radius: 80px;
+  }
+
+/* Categoty*/
+
+  .category-card {
+    margin-top: 20px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    margin: 10px;
+  }
+  
+  .category-cards-container {
+    display: flex;
+    justify-content: center;
+  }
+  .category-text {
+    width: 60%;
+  }
+  
+
+/* Popular products*/
+
+.popular-products {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.popular-btn button {
+width: 139px;
+height: 45px;
+border: 1px solid #003F62;
+border-radius: 20px;
+padding: 0px;
+gap: 20px;
+}
+
+
+
+/* Product*/
+
+  .product-card {
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 220px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  .product-img-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .product-img-container img {
+    max-height: 100%;
+    width: auto;
+    display: flex;
+  }
+  
+  .product-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10px;
+    position: relative;
+  }
+  
+  .product-text div {
+    padding: 3px 0;
+  }
+  
+  .product-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  
