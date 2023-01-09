@@ -1,18 +1,17 @@
 import './App.css';
 import MainMenu from '../src/components/MainMenu';
-import AliceCarousel from 'react-alice-carousel'
 import Upper from './components/Upper'
 import Search from './components/search'
 import ProductSlider from './components/productSlider';
-import productsData from './data/products';
 import Products from './components/Products';
-
-
-import categoryData from './data/category';
 import Category from './components/Category';
 
-function App() {
+import AliceCarousel from 'react-alice-carousel'
 
+import categoryData from './data/category';
+import productsData from './data/products';
+
+function App() {
 
   const categories = categoryData.map(data => {
     return (
@@ -24,7 +23,6 @@ function App() {
     )
   })
 
-
   const products = productsData.map(data => {
     return (
       <Products
@@ -35,9 +33,6 @@ function App() {
       />
     )
   })
-
-
-
 
   return (
     <div className="App">
@@ -68,8 +63,6 @@ function App() {
                 <button>Mouse</button>
               </div>
             </div>
-
-
 
             <AliceCarousel autoPlay autoPlayInterval="3000"
               responsive={{

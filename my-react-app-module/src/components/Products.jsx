@@ -17,6 +17,11 @@ function Products(props) {
     const onPointerLeave = () => console.log('Leave')
     const onPointerMove = (value, index) => console.log(value, index)
 
+    function handleUpVote (props) {
+        console.log('clicked')
+        console.log(props.title)
+    }
+
 
 
     return (
@@ -25,7 +30,9 @@ function Products(props) {
                 <img src={props.imgUrl} alt="image" />
             </div>
             <div className="product-text">
-                <div className="">{props.title}</div>
+                <div className="">
+                    <p onClick={ ()=>{handleUpVote(props)}}>{props.title}</p>
+                    </div>
                 <div className="">${props.price}</div>
                 <div className='product-ratings'>
                     <Rating
