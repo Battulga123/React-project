@@ -37,15 +37,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className='Upper'>
 
           <Upper />
           <Search />
           <MainMenu />
           <div className='content-container'>
             <ProductSlider />
-
-
             <AliceCarousel
               responsive={{
                 0: { items: 3 }
@@ -75,11 +72,63 @@ function App() {
 
             </AliceCarousel>
 
-          </div>
-        </div>
+            <div className='banner-container1'>
+              <div className='row'>
+                <div className='col-6'></div>
+                <div className='col-6 text-center'>
+                  <button>New laptops</button>
+                  <p>Sale up to 50% off</p>
+                  <p>12 inch hd display</p>
+                  <button>Show now</button>
+                </div>
+              </div>
+            </div>
 
-      </header>
-    </div>
+
+
+            <div className='description'>
+              <div className='description1'>
+                <div>
+                  <img src='pictures/box-tick.png'></img>
+                </div>
+                <div>
+                  <p>Free delivery</p>
+                  <p>on order above $50,00</p>
+                </div>
+              </div>
+              <div className='description3'>
+                <div>
+
+                  <img src='pictures/crown.png'></img>
+                </div>
+                <div>
+                  <p>Best quality </p>
+                  <p>best quality in low price</p>
+                </div>
+              </div>
+
+              <div className='description3'>
+                <div>
+                  <img src='pictures/shield-security.png'></img>
+                </div>
+                <div>
+                  <p>1 year warranty</p>
+                  <p>Avaliable warranty</p>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+          </div>
+      </header >
+    </div >
   );
 }
 

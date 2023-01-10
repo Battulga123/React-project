@@ -1,59 +1,58 @@
 html {
-    font-family: 'Poppins';
+  font-family: 'Poppins';
 
 }
 
 .content-container {
-    width: 85vw;
-    margin: 0 auto;
+  width: 85vw;
+  margin: 0 auto;
 }
 
 .upper-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
 }
 
 .upper-right {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .upper-right img {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 
 
 
-\\
-.navbar {
-    background-color: #F4F4F4;
+\\ .navbar {
+  background-color: #F4F4F4;
 }
 
 
 /* Search */
 .searchbar-container {
-    background-color: #003F62;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .logo-container {
-    width: 140px;
-    padding-left: 120px;
-  }
-  
-  .signin-container {
-    color: white;
-    display: flex;
-    justify-content: right;
-  }
+  background-color: #003F62;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .signin,
+.logo-container {
+  width: 140px;
+  padding-left: 120px;
+}
+
+.signin-container {
+  color: white;
+  display: flex;
+  justify-content: right;
+}
+
+.signin,
 .favorite,
 .basket {
   padding: 0 10px;
@@ -64,118 +63,195 @@ html {
 /* Product slider*/
 
 .banner-container {
-    font-weight: 700;
-    font-size: 43px;
-    color: #1B5A7D;
-  }
-  
-  
-  .banner-container .text-short {
-  
-    font-size: 25px;
-    font-weight: 400;
-  }
-  
+  font-weight: 700;
+  font-size: 43px;
+  color: #1B5A7D;
+}
 
-  .promotion-price {
-    position: absolute;
-    background-color: #EDA415;
-    font-size: 21px;
-    color: white;
-    right: 30px;
-    bottom: 0px;
-    padding: 20px 30px;
-    border-radius: 80px;
-  }
+
+.banner-container .text-short {
+
+  font-size: 25px;
+  font-weight: 400;
+}
+
+
+.promotion-price {
+  position: absolute;
+  background-color: #EDA415;
+  font-size: 21px;
+  color: white;
+  right: 30px;
+  bottom: 0px;
+  padding: 20px 30px;
+  border-radius: 80px;
+}
 
 /* Categoty*/
 
-  .category-card {
-    margin-top: 20px;
-    margin: auto;
-    padding: 10px;
-    border: 1px solid #ddd;
-    width: 250px;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 20px;
-    margin: 10px;
-  }
-  
-  .category-cards-container {
-    display: flex;
-    justify-content: center;
-  }
-  .category-text {
-    width: 60%;
-  }
-  
+.category-card {
+  margin-top: 20px;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  width: 250px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.category-cards-container {
+  display: flex;
+  justify-content: center;
+}
+
+.category-text {
+  width: 60%;
+}
+
 
 /* Popular products*/
 
 .popular-products {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
 }
 
 .popular-btn button {
-width: 139px;
-height: 45px;
-border: 1px solid #003F62;
-border-radius: 20px;
-padding: 0px;
-gap: 20px;
+  width: 139px;
+  height: 45px;
+  border: 1px solid #003F62;
+  border-radius: 20px;
+  padding: 0px;
+  gap: 20px;
 }
 
 
 
 /* Product*/
 
-  .product-card {
-    padding: 10px;
-    border: 1px solid #ddd;
-    width: 220px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    margin: 10px;
-  }
-  
-  .product-img-container {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .product-img-container img {
-    max-height: 100%;
-    width: auto;
-    display: flex;
-  }
-  
-  .product-text {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 10px;
-    position: relative;
-  }
-  
-  .product-text div {
-    padding: 3px 0;
-  }
-  
-  .product-cards-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  
+.product-card {
+  padding: 10px;
+  border: 1px solid #ddd;
+  width: 220px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.product-img-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.product-img-container img {
+  max-height: 100%;
+  width: auto;
+  display: flex;
+}
+
+.product-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 10px;
+  position: relative;
+}
+
+.product-text div {
+  padding: 3px 0;
+}
+
+.product-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Banner*/
+.banner-container1 {
+  background-image: url(../public/pictures/banner.png);
+  background-size: cover;
+  height: 270px;
+}
+
+
+.banner-container1 button {
+  background: #EDA415;
+  border-radius: 20px;
+  width: 134px;
+  height: 45px;
+  color: #FFFFFF;
+}
+
+.banner-container1 p:nth-child(2) {
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 62px;
+  color: #2E8FC5;
+}
+
+.banner-container1 p:nth-child(3) {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+
+/* Description*/
+
+.description {
+  display: flex;
+  background-color: #E2F4FF;
+  justify-content: space-around;
+  margin-top: 75px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.description p{
+  margin: 0px;
+}
+
+.description p:nth-last-child(1){
+  margin-top: 6px;
+  font-weight: 400;
+font-size: 18.09px;
+line-height: 27px;
+color: #003F62;
+}
+
+.description p:nth-child(1) {
+  color: #003F62;
+  font-weight: 600;
+font-size: 22.09px;
+line-height: 33px;
+}
+
+.description1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.description2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.description3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
