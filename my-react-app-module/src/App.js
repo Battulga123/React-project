@@ -37,6 +37,19 @@ function App() {
 
   })
 
+  const aboutUs = aboutUsData.map(data => {
+    return (
+      <AboutUs
+        url={data.url}
+        name={data.name}
+        about={data.about}
+      />
+    )
+  })
+
+
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -46,6 +59,8 @@ function App() {
         <MainMenu />
         <div className='content-container'>
           <ProductSlider />
+          
+          {/* Categories */}
           <AliceCarousel
             responsive={{
               0: { items: 3 }
@@ -53,6 +68,7 @@ function App() {
             {categories}
           </AliceCarousel>
 
+            {/*Popular Product */}
           <div className='popular-products'>
             <div className='popular-text'>
               <p>Popular product</p>
@@ -64,7 +80,9 @@ function App() {
             </div>
           </div>
 
-          <AliceCarousel autoPlay autoPlayInterval="3000"
+
+           {/* Product */}
+          <AliceCarousel
             responsive={{
               0: {
                 items: 4
@@ -75,6 +93,8 @@ function App() {
 
           </AliceCarousel>
 
+
+          {/* Banner */}
           <div className='banner-container1'>
             <div className='row'>
               <div className='col-6'></div>
@@ -87,7 +107,7 @@ function App() {
             </div>
           </div>
 
-
+          {/* Description */}
           <div className='description'>
             <div className='description1'>
               <div>
@@ -120,7 +140,27 @@ function App() {
             </div>
           </div>
 
-            <AboutUs/>
+          {/* About us */}
+          <AliceCarousel
+            responsive={{
+              0: {
+                items: 3
+              }
+            }}
+
+          >
+            {aboutUs}
+          </AliceCarousel>
+
+
+          <div className='Logos'>
+            <img src=''></img>
+            <img></img>
+            <img></img>
+            <img></img>
+
+          </div>
+
 
 
 
