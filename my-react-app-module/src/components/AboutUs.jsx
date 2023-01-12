@@ -1,13 +1,13 @@
 import aboutUsData from "../data/AboutUs"
 
-function AboutUs() {
+function AboutUs(props) {
     return (
         <div className="aboutUs-container">
-            <div className="">
-            <img src="" alt="" />
-            <p></p>
+            <div className="aboutUs-upper">
+                <img src={props.url} alt="" />
+                <p>{props.name}</p>
             </div>
-            <p></p>
+            <p className="aboutUs-bottom">{props.about}</p>
         </div>
     )
 }
