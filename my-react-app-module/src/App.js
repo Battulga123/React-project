@@ -59,7 +59,7 @@ function App() {
         <MainMenu />
         <div className='content-container'>
           <ProductSlider />
-          
+
           {/* Categories */}
           <AliceCarousel
             responsive={{
@@ -68,7 +68,7 @@ function App() {
             {categories}
           </AliceCarousel>
 
-            {/*Popular Product */}
+          {/*Popular Product */}
           <div className='popular-products'>
             <div className='popular-text'>
               <p>Popular product</p>
@@ -81,7 +81,7 @@ function App() {
           </div>
 
 
-           {/* Product */}
+          {/* Product */}
           <AliceCarousel
             responsive={{
               0: {
@@ -152,16 +152,16 @@ function App() {
             {aboutUs}
           </AliceCarousel>
 
-
-          <div className='Logos'>
-            <img src=''></img>
-            <img></img>
-            <img></img>
-            <img></img>
-
+          {/* Logos*/}
+          <div className='logos'>
+            <img src='./pictures/brand-4.png'></img>
+            <img src='./pictures/brand-5.png'></img>
+            <img src='./pictures/brand-6.png'></img>
+            <img src='./pictures/brand-7.png'></img>
+            <img src='./pictures/brand-8.png'></img>
           </div>
 
-
+          {/* Lastest news */}
 
 
 
