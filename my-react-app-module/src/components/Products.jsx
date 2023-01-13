@@ -4,18 +4,14 @@ import { Rating } from 'react-simple-star-rating'
 
 function Products(props) {
 
+    const [heartcheck, setHeartcheck] = useState(false)
     const [rating, setRating] = useState(0)
-
-    // Catch Rating value
     const handleRating = (rate) => {
         setRating(rate)
-
-        // other logic
     }
-    // Optinal callback functions
-    const onPointerEnter = () => console.log('Enter')
-    const onPointerLeave = () => console.log('Leave')
-    const onPointerMove = (value, index) => console.log(value, index)
+    // const onPointerEnter = () => console.log('Enter')
+    // const onPointerLeave = () => console.log('Leave')
+    // const onPointerMove = (value, index) => console.log(value, index)
 
     function handleUpVote (props) {
         console.log('clicked')
@@ -24,10 +20,37 @@ function Products(props) {
 
 
 
+    // const [wished, setWished] = useState ([])
+
+
+    function handleWish(event) {
+        const heart = {
+            img: event.imgUrl,
+            title: event.title
+        }
+        console.log(heart)
+         if(heartcheck) {
+            props.setWishList(props.wishList + 1)
+         } else {
+         props.setWishList(props.wishList - 1)
+         }
+       
+    }
+    // setWished([...wished, heart])
+
+    console.log(handleWish)
+
+   
+
+
     return (
         <div className="product-card">
             <div className="product-img-container">
                 <img src={props.imgUrl} alt="image" />
+                <img src='./pictures/heart.png' className='heart' onClick={(e) => {
+                    setHeartcheck(!heartcheck) 
+                    handleWish(e)
+                }}/>
             </div>
             <div className="product-text">
                 <div className="">
@@ -37,9 +60,9 @@ function Products(props) {
                 <div className='product-ratings'>
                     <Rating
                         onClick={handleRating}
-                        onPointerEnter={onPointerEnter}
-                        onPointerLeave={onPointerLeave}
-                        onPointerMove={onPointerMove}
+                        // onPointerEnter={onPointerEnter}
+                        // onPointerLeave={onPointerLeave}
+                        // onPointerMove={onPointerMove}
                         initialValue={props.rating}
                         allowFraction={true}
                         size={15}

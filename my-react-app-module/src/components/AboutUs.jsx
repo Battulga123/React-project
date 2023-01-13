@@ -1,4 +1,3 @@
-import aboutUsData from "../data/AboutUs"
 
 function AboutUs(props) {
     return (
