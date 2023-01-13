@@ -12,8 +12,12 @@ import AliceCarousel from 'react-alice-carousel'
 import categoryData from './data/category';
 import productsData from './data/products';
 import aboutUsData from './data/AboutUs';
+import { useState } from 'react';
 
 function App() {
+
+  const [wishList, setWishList] = useState(5)
+
 
   const categories = categoryData.map(data => {
     return (
@@ -32,6 +36,8 @@ function App() {
         imgUrl={data.imgUrl}
         price={data.price}
         rating={data.rating}
+        wishList = {wishList}
+        setWishList = {setWishList}
       />
     )
 
@@ -52,7 +58,8 @@ function App() {
       <header className="App-header">
 
         <Upper />
-        <Search />
+        <Search
+        wishList= {wishList} /> 
         <MainMenu />
         <div className='content-container'>
           <ProductSlider />

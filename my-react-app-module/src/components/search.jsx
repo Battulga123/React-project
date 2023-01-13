@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import Wish from "./Wish";
 
-function Search() {
+function Search(props) {
+
+
+const [wishList, SetWishlist] = useState(false)
+
     return (<div className="searchbar-container">
         <div className="container">
             <div className="row">
@@ -26,7 +31,8 @@ function Search() {
                         Sign in
                     </div>
                     <div className="favorite">
-                        <i className="bi bi-suit-heart"></i>
+                        <i className="bi bi-suit-heart" onClick={() =>SetWishlist(true)}>{props.wishList}</i>
+                        {wishList ? <Wish/> : ""}
                     </div>
                     <div className="basket">
                         <i className="bi bi-cart"></i>
