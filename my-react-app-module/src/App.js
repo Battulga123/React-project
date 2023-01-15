@@ -6,13 +6,17 @@ import ProductSlider from './components/productSlider';
 import Products from './components/Products';
 import Category from './components/Category';
 import AboutUs from './components/AboutUs';
+import Latest from './components/LatestNews';
+import Footer from './components/Footer';
 
 import AliceCarousel from 'react-alice-carousel'
 
 import categoryData from './data/category';
 import productsData from './data/products';
 import aboutUsData from './data/AboutUs';
+import LatestNewsData from './data/LatestNews';
 import { useState } from 'react';
+
 
 function App() {
 
@@ -36,8 +40,8 @@ function App() {
         imgUrl={data.imgUrl}
         price={data.price}
         rating={data.rating}
-        wishList = {wishList}
-        setWishList = {setWishList}
+        wishList={wishList}
+        setWishList={setWishList}
       />
     )
 
@@ -53,13 +57,26 @@ function App() {
     )
   })
 
+  const latestnews = LatestNewsData.map(data => {
+    return (
+      <Latest
+        imgUrl={data.imgUrl}
+        date={data.date}
+        title={data.title}
+        detail={data.detail}
+        source={data.source}
+      />
+    )
+  })
+
+
   return (
     <div className="App">
       <header className="App-header">
 
         <Upper />
         <Search
-        wishList= {wishList} /> 
+          wishList={wishList} />
         <MainMenu />
         <div className='content-container'>
           <ProductSlider />
@@ -166,13 +183,22 @@ function App() {
           </div>
 
           {/* Lastest news */}
+          <div>
+            <p className="latest"> Latest news</p>
+            <AliceCarousel
+              responsive={{
+                0: {
+                  items: 2
+                }
+              }}
 
-
-
-
-
-
+            >
+              {latestnews}
+            </AliceCarousel>
         </div>
+        
+    </div>
+    <Footer/>
       </header >
     </div >
   );
