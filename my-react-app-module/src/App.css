@@ -1,6 +1,7 @@
-html {
-  font-family: 'Poppins';
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+.App {
+  font-family: 'Poppins';
 }
 
 .content-container {
@@ -313,12 +314,106 @@ html {
 
 
 .wishList {
-color: red;
-position: absolute;
-width: 330px;
-background-color: white;
-right: 1vw;
-top: 130px;
-border: 1px solid #A5A5A5;
-border-radius: 10px;
+  color: red;
+  position: absolute;
+  width: 330px;
+  background-color: white;
+  right: 1vw;
+  top: 130px;
+  border: 1px solid #A5A5A5;
+  border-radius: 10px;
+}
+
+.latest-container {
+  border: 1px solid #C8C8C8;
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 40px 15px;
+}
+
+.latest {
+  font-weight: 600;
+  font-size: 25.38px;
+  line-height: 38px;
+  color: #1B5A7D;
+  margin-top: 100px;
+}
+
+.latest-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  width: 147px;
+  height: 41px;
+  border: 1px solid #D4D4D4;
+  border-radius: 20px;
+}
+
+.latest-title {
+  font-weight: 600;
+  font-size: 22.38px;
+  line-height: 34px;
+  color: #1B5A7D;
+}
+
+.latest-detail {
+  font-weight: 400;
+  font-size: 13.1707px;
+  line-height: 20px;
+  color: #003F62;
+}
+
+.latest-source {
+  font-weight: 400;
+  font-size: 13.1707px;
+  line-height: 20px;
+  color: #003F62;
+}
+
+/* Footer */
+
+.footer {
+  background: #E2F4FF;
+  height: 511px;
+}
+
+.footer-upper {
+  position: relative;
+  top: 42px;
+  height: 139px;
+  width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+.footer-upper-right {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-upper-left p {
+  font-weight: 700;
+  font-size: 29.38px;
+  line-height: 44px;
+  color: #1B5A7D;
+}
+
+.footer-upper-mid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 388px;
+  height: 63px;
+  background: #EDA415;
+  border-radius: 20px;
+  padding: 0px 0px 0px 25px;
 }
