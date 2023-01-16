@@ -13,7 +13,7 @@ function Products(props) {
     // const onPointerLeave = () => console.log('Leave')
     // const onPointerMove = (value, index) => console.log(value, index)
 
-    function handleUpVote (props) {
+    function handleUpVote(props) {
         console.log('clicked')
         console.log(props.title)
     }
@@ -29,18 +29,16 @@ function Products(props) {
             title: event.title
         }
         console.log(heart)
-         if(heartcheck) {
+        if (heartcheck) {
             props.setWishList(props.wishList + 1)
-         } else {
-         props.setWishList(props.wishList - 1)
-         }
-       
+        } else {
+            props.setWishList(props.wishList - 1)
+        }
+
     }
     // setWished([...wished, heart])
 
     console.log(handleWish)
-
-   
 
 
     return (
@@ -48,14 +46,14 @@ function Products(props) {
             <div className="product-img-container">
                 <img src={props.imgUrl} alt="image" />
                 <img src='./pictures/heart.png' className='heart' onClick={(e) => {
-                    setHeartcheck(!heartcheck) 
+                    setHeartcheck(!heartcheck)
                     handleWish(e)
-                }}/>
+                }} />
             </div>
             <div className="product-text">
                 <div className="">
-                    <p onClick={ ()=>{handleUpVote(props)}}>{props.title}</p>
-                    </div>
+                    <p onClick={() => { handleUpVote(props) }}>{props.title}</p>
+                </div>
                 <div className="">${props.price}</div>
                 <div className='product-ratings'>
                     <Rating
@@ -68,7 +66,7 @@ function Products(props) {
                         size={15}
                     />
                 </div>
-                <div className="basket-icon text-center text-light">
+                <div className="basket-icon text-center text-black">
                     <i class="bi bi-cart3"></i>
                 </div>
             </div>

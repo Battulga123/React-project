@@ -5,9 +5,9 @@ function Category(props) {
                 <div className="card-img-container">
                     <img src={props.imgUrl} alt="image" />
                 </div>
-                <div className="category-text text-center">
+                <div className="category-text">
                     <div className="title">{props.title}</div>
-                    <div className="item text-center">{props.items}</div>
+                    <div className="item">{props.items}</div>
                 </div>
 
             </div>
