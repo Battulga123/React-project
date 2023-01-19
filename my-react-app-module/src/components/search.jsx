@@ -31,8 +31,8 @@ const [wishList, SetWishlist] = useState(false)
                         Sign in
                     </div>
                     <div className="favorite">
-                        <i className="bi bi-suit-heart" onClick={() =>SetWishlist(true)}>{props.wishList}</i>
-                        {wishList ? <Wish/> : ""}
+                        <i className="bi bi-heart" onClick={() =>SetWishlist(true)}>{props.wishList}</i>
+                        {wishList ? <Wish wishList={wishList} SetWishlist={SetWishlist}/> : ""}
                     </div>
                     <div className="basket">
                         <i className="bi bi-cart"></i>
