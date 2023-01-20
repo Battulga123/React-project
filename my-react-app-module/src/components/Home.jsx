@@ -16,7 +16,7 @@ import LatestNewsData from "../data/LatestNews";
 import { useState } from "react";
 
 export default function Home() {
-  const [wishList, setWishList] = useState(5);
+  const [wishList, setWishList] = useState([]);
   const categories = categoryData.map((data) => {
     return (
       <Category title={data.title} imgUrl={data.imgUrl} items={data.items} />
@@ -54,7 +54,7 @@ export default function Home() {
   return (
     <div>
       <Upper />
-      <Search wishList={wishList} />
+      <Search wishList={wishList} setWishList ={setWishList}/>
       <MainMenu />
       <div className="content-container">
         <ProductSlider />
